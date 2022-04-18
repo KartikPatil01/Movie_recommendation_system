@@ -1,0 +1,28 @@
+Type of recommendation system 
+ 1 -> content based  -> based on the similar content  ex . content based / hybrid ( YouTube )
+ 2 -> colaborative filtering -> based on the users interest 
+ 3 -> hybrid -> both the type included 
+
+Project Flow ( Important )
+
+1 . Data ---> Preprocessing  --> Model Building --> convert to website ----> deployment 
+
+Create the tags 
+
+remove columns --> budget , homepage , original_language , original_title , popularity , production_companies 
+                                     
+
+keep columns --> genres , id , keywords , overview , title , cast , crew 
+
+>> Step of Vectorization 
+
+1 . concatenate all the tags 
+2 . find all the different that exist in the concatenated tags 
+3 . calculate occurence of the each word for the individual movie and store the counts in dataframe 
+
+stop words -> used for sentence formation which not have actual meaning ( are , the , at , etc. )
+
+cosine distance between two vectors 
+
+distance is inversely proportional to the similarity
+I am kartik
