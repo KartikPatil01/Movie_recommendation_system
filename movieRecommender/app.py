@@ -28,13 +28,13 @@ def recommend(movie):
     return recommended_movies , recommended_movies_poster
 
 #load the pickle
-movies_list = pickle.load(open("movies.pkl","rb"))
+movies_list = pickle.load(open("my_movies.pkl","rb"))
 
 similarity = pickle.load(open("similarity.pkl","rb"))
 
 # fetch the movie titles
 m_list = movies_list["title"].values
-
+print(m_list)
 new_df = pd.DataFrame(movies_list)
 
 # print(movies_list[movies_list['title'] == 'Avatar'].index)
